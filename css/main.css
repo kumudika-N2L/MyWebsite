@@ -23,7 +23,7 @@ nav a {
 }
 footer {
     background-color: #0a85d8; /* background or background-color both work */
-    position: fixed; /* fix to the viewport */
+    position: relative; /* fix to the viewport */
     bottom: 0; /* Start 0 pixels from the bottom of the viewport */
     left: 0; /* Start 0 pixels from the left of the viewport */
     width: 100%; /* Set the width to 100% of the viewport */
@@ -60,4 +60,46 @@ main {
 .wrap {
     float: right;
 }
+
+/* Define the grid container */
+.grid-container {
+  display: grid;
+  /* flex-direction: column; */
+gap: 8px; /* Gap between grid items */
+ grid-template-columns: 1fr 1fr 1fr ; /* Two columns with equal width */
+ }
+
+/* Style for each grid item */
+.grid-item {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+.grid-item img {
+    height: 70%; /* Ensure the image takes up 70% of its container's height */
+}
+/* Media query for screens smaller than 800 pixels */
+@media (max-width:800px) {
+    .grid-container{
+        grid-template-columns: 1fr 1fr; /* Change to a single column */
+    }
+/* Media query for screens smaller than 800 pixels */
+@media (max-width: 600px) {
+    .grid-container{
+        grid-template-columns: 1fr; /* Change to a single column */
+    }    
+}
+.grid-item img{
+  width: 300px;
+ height:200px;
+}
+.gird-container img{
+ height: 70%; /* Ensure the image takes up 70% of its container's height */
+}
+
+
+
+
+
+
 

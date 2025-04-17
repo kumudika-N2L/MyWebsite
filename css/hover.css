@@ -1,0 +1,24 @@
+/* .grid-item img:hover {
+  border-radius: 100%;
+} */
+
+/* add this CSS to your stylesheet *::after
+
+
+/* initial styleing for the image */
+.grid-item {
+  overflow: hidden;
+  position: relative;
+}
+
+/* add transition for smooth zooming *.grid-item.grid */
+.gird-item img {
+  transition: transform 0.3s ease;
+}
+
+
+/* apply zoom effect on hover */
+.grid-item:hover {
+  transform:scale(1.2);
+  order:0;
+}
